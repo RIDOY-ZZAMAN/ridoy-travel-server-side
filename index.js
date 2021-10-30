@@ -21,7 +21,7 @@ async function run() {
 
         //GET API
         app.get('/', (req, res) => {
-            res.send("Hello from Assignment 11");
+            res.send("Hello from the Assignment  11");
 
         })
         app.get('/services', async (req, res) => {
@@ -68,7 +68,7 @@ async function run() {
             res.json(result);
         })
 
-        //UPDATE USER
+        //UPDATE BOOKING STATUS
         app.put('/booking/:id', async (req, res) => {
             const id = req.params.id;
             const updateBookingStatus = req.body;
